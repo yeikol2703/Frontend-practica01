@@ -4,223 +4,197 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
-  <!--<![endif]-->
-  <head>
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Postman-Practice01</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  </head>
-  <body>
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web\css\all.css">
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Practica01</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Cpersona">Persona</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Ccasa">Casa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-          </ul>
+        <div class="container">
+            <a class="navbar-brand" href="#">Practica01</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Cpersona">Persona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ccasa">Casa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="d-flex " >
+                <a class="icon" href="https://github.com/yeikol2703" ><img src="img/github-brands.svg" alt="">  </a>
+                <a class="icon" href="https://www.linkedin.com/in/yeikol-villalobos-1b784916a/" ><img src="img/linkedin-brands.svg" alt=""> </a>
+            </div>
+
+           
+            
         </div>
-        
-      </div>
     </nav>
 
     <div class="container">
-      <section id="Cpersona">
-        <h1>Consultas Persona</h1>
+        <section id="Cpersona">
+            <h1>Consultas Persona</h1>
 
-        <div style="border: 1px solid red; height: 500px">
-          <div class="input-group">
-            <input
-              type="text"
-              aria-label="nombre"
-              class="form-control"
-              placeholder="Nombre"
-            />
-            <input
-              type="text"
-              aria-label="apellido"
-              class="form-control"
-              placeholder="Apellido"
-            />
-            <button type="button" class="btn btn-primary">Añadir</button>
-          </div>
+            <div style="border: 1px solid red; height: 500px">
+                <div class="input-group">
+                    <input type="text" aria-label="nombre" class="form-control" placeholder="Nombre" />
+                    <input type="text" aria-label="apellido" class="form-control" placeholder="Apellido" />
+                    <button type="button" class="btn btn-primary">Añadir</button>
+                </div>
 
-          <div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Apellido</th>
-                  <th scope="col">Casas</th>
-                  <th scope="col">Modificar</th>
-                  <th scope="col">Borrar</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Yeikol</td>
-                  <td>Villalobos</td>
-                  <td> 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Casas
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">casa 01</a></li>
-                          <li><a class="dropdown-item" href="#">casa 02</a></li>
-                          <li><a class="dropdown-item" href="#">casa 03</a></li>
-                        </ul>
-                      </div>
-
-                  </td>
-                  <td ><button type="button" class="btn btn-warning">Modificar</button></td>
-                  <td> <button type="button" class="btn btn-danger">Borrar</button> </td>
-                </tr>
-                
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="Ccasa">
-        <h1>Consultas Casa</h1>
-        <div style="border: 1px solid red; height: 500px">
-          <div class="input-group">
-            <input
-              type="text"
-              aria-label="color"
-              class="form-control"
-              placeholder="Color"
-            />
-            <input
-              type="number"
-              aria-label="area"
-              class="form-control"
-              placeholder="Area"
-            />
-
-            <span> Nueva </span>
-
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Si
-              </label>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Casas</th>
+                                <th scope="col">Modificar</th>
+                                <th scope="col">Borrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Yeikol</td>
+                                <td>Villalobos</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Casas
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">casa 01</a></li>
+                                            <li><a class="dropdown-item" href="#">casa 02</a></li>
+                                            <li><a class="dropdown-item" href="#">casa 03</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">
+                                        Modificar
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Borrar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
-              />
-              <label class="form-check-label" for="flexRadioDefault2">
-                No
-              </label>
+        </section>
+
+        <section id="Ccasa">
+            <h1>Consultas Casa</h1>
+            <div style="border: 1px solid red; height: 500px">
+                <div class="input-group">
+                    <input type="text" aria-label="color" class="form-control" placeholder="Color" />
+                    <input type="number" aria-label="area" class="form-control" placeholder="Area" />
+
+                    <span> Nueva </span>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Si
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked />
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            No
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Añadir</button>
+                </div>
+
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Color</th>
+                                <th scope="col">Area m2</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Nueva</th>
+                                <th scope="col">Modificar</th>
+                                <th scope="col">Borrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Azul</td>
+                                <td>200</td>
+                                <td>01/08/2021</td>
+                                <td>Si</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">
+                                        Modificar
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Borrar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+        </section>
 
-            <button type="button" class="btn btn-primary">Añadir</button>
-          </div>
+        <section id="about">
+            <h1>About this project</h1>
 
-          <div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Color</th>
-                  <th scope="col">Area m2</th>
-                  <th scope="col">Fecha</th>
-                  <th scope="col">Nueva</th>
-                  <th scope="col">Modificar</th>
-                  <th scope="col">Borrar</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Azul</td>
-                  <td>200</td>
-                  <td>01/08/2021</td>
-                  <td>Si</td>
-                  <td ><button type="button" class="btn btn-warning">Modificar</button></td>
-                  <td> <button type="button" class="btn btn-danger">Borrar</button> </td>
-                </tr>
-                
-                
-              </tbody>
-            </table>
-          </div>
-
-
-          
-        </div>
-      </section>
-
-      <section id="about">
-        <h1>About this project</h1>
-
-        <div style="border: 1px solid red; height: 200px">
-            <p>Lorem ipsum dolor sit am
-            et consectetur adipisicing elit. Aliquam, culpa voluptates voluptatum illo error sunt explicabo! Iusto alias, quos vel adipisci cum eius quidem necessitatibus
-            , officiis veniam dolorum, veritatis natus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, et dolore excepturi beatae delectus officiis. Nemo porro, aspernatur, odio provident libero doloribus, minus natus non recusandae fugiat officia facilis eligendi.
-        </p>
-        </div>
-      </section>
+            <div style="border: 1px solid red; height: 200px">
+                <p>
+                    Lorem ipsum dolor sit am et consectetur adipisicing elit. Aliquam,
+                    culpa voluptates voluptatum illo error sunt explicabo! Iusto alias,
+                    quos vel adipisci cum eius quidem necessitatibus , officiis veniam
+                    dolorum, veritatis natus, Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Assumenda, et dolore excepturi beatae delectus
+                    officiis. Nemo porro, aspernatur, odio provident libero doloribus,
+                    minus natus non recusandae fugiat officia facilis eligendi.
+                </p>
+            </div>
+        </section>
     </div>
 
-    <footer>
-        @ Derechos reservados 2021
-    </footer>
-
-
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <footer>@ Derechos reservados 2021</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
+
 </html>

@@ -16,4 +16,25 @@ footer{
     color: white;
     text-align: center;
 }
+.icon {
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    content: "";
+    display: inline-block;
+    height: 29px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 29px;
+    margin-left: 20px;
+    color: white;
+}
+@media (max-width: 580px) {
+    .d-flex {
+      display: none;
+    }
+    .icon {
+        display: none;
+      }
+  }
+
 
