@@ -1,3 +1,10 @@
+body{
+    background:url(../img/background_1.png) no-repeat center center fixed;
+    background-size: cover ;
+}
+.nav-item:hover{
+    transform: scale(1.1);
+}
 section  {
     background-color: wheat;
     margin: 100px;
@@ -36,5 +43,7 @@ footer{
         display: none;
       }
   }
+
+
 
 
