@@ -46,7 +46,12 @@ footer{
         display: none;
       }
   }
-
+  @media (max-width: 575.98px) { 
+    section{
+        margin: 100px auto ;
+        width: 100%;
+    }
+   }
 
 
 
