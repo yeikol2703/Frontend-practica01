@@ -3,15 +3,18 @@ body{
     background-size: cover ;
 }
 .nav-item:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 section  {
     background-color: wheat;
     margin: 100px;
+    border-radius: 10px;
+    
 }
 h1{
     text-align: center;
     background-color: gainsboro;
+    border-radius: 10px;
 }
 footer{
     position: relative;
